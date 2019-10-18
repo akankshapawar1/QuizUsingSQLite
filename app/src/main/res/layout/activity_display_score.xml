@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayScore">
+
+    <TextView
+        android:id="@+id/tvyouscored"
+        android:layout_width="171dp"
+        android:layout_height="26dp"
+        android:soundEffectsEnabled="false"
+        android:text="        You scored"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <EditText
+        android:id="@+id/score2"
+        android:layout_width="218dp"
+        android:layout_height="160dp"
+        android:background="@android:color/white"
+        android:cursorVisible="false"
+        android:editable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:textColor="@android:color/black"
+        android:textSize="75dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvyouscored"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_round"
+        android:onClick="goBack"
+        android:text="Play again!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="201dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/button_round"
+        android:onClick="onButtonClick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="LogIn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="201dp"
+        android:layout_height="49dp"
+        android:background="@drawable/button_round"
+        android:onClick="onButtonClick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="SignUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <EditText
+        android:id="@+id/tvuser"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="Enter name"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableLeft="@drawable/u"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <EditText
+        android:id="@+id/tvpass"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/pass"
+        android:maxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvuser" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="241dp"
+        android:layout_height="30dp"
+        android:background="@drawable/edit_round"
+        android:checked="false"
+        android:text="Save login information"
+
+        app:layout_constraintBottom_toTopOf="@+id/signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+</androidx.constraintlayout.widget.ConstraintLayout>

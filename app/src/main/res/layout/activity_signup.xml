@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <EditText
+        android:id="@+id/tvname"
+
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_round"
+        android:hint="Enter name"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <EditText
+        android:id="@+id/tvemail"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/edit_round"
+        android:hint="enter email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signup"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="201dp"
+        android:layout_height="58dp"
+        android:background="@drawable/button_round"
+        android:layout_marginBottom="72dp"
+        android:onClick="onSignUpClick"
+        android:text="SignUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pass1"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="enter password"
+        android:inputType="text"
+        android:maxLength="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/pass2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvemail"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="re-enter password"
+        android:inputType="text"
+        android:maxLength="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:background="@drawable/edit_round"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/pass1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvemail"
+        app:layout_constraintVertical_bias="0.552" />
+</androidx.constraintlayout.widget.ConstraintLayout>

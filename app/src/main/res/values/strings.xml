@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="emptyString" />
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="LinkTutorialsPoint">
+        <a href="https://www.tutorialspoint.com/dbms/index.htm">Database Notes</a>
+    </string>
+    <string name="LinkTutorialsPoint2">
+        <a href="https://www.tutorialspoint.com/android/android_studio.htm">Android Notes</a>
+    </string>
+    <string name="LinkTutorialsPoint3">
+        <a href="https://www.tutorialspoint.com/java/index.htm">JAVA Notes</a>
+    </string>
+</resources>
